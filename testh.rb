@@ -5,10 +5,10 @@ BASE_HOA = {
 }
 
 
-def add_character(show, name)
- 
-  BASE_HOA[show] << name 
-  # Write your implementation here
-  # Should return the array of the 'show' argument
-  BASE_HOA[show]
+def add(show,name)
+  BASE_HOA[:show] << name
 end
+
+# BASE_HOA[:chipmunks] << "dave"
+add("chipmunks","dave")
+puts BASE_HOA[:chipmunks]
